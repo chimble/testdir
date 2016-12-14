@@ -1,4 +1,5 @@
 <!DOCTYPE html>
+{% load static %}
 <html>
     <head>
         <meta charset="utf-8">
@@ -6,7 +7,12 @@
     </head>
     <body>
         coffee
-        <a href='/dayinthelifeapp/gotoclass'>morning times</a>
-        <a href='/dayinthelifeapp/gotoclass'>joule</a>
+        <a href='/dayinthelifeapp/gotoclass' id="morningButton">morningtimes</a>
+        <a href='/dayinthelifeapp/gotoclass' id="joulesButton">joules</a>
     </body>
+    <script
+    src="https://code.jquery.com/jquery-3.1.1.min.js"
+    integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8="
+    crossorigin="anonymous"></script>
+    <script type="text/javascript" src="{% static 'js/coffee.js' %}"></script>
 </html>
